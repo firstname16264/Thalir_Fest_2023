@@ -1,4 +1,4 @@
-Hello Guys. I am FirstName.
+Hello Guys. I am Karthik Govindan.
 I was a student member of the Thalir Innovation Fest 2023 competion. Specifically the design thinking division.
 I was responsible for the circuit, and code of the hardware and the Full Stack Development of the Software.
 Our project was nominated for the finals and later went on to win First Place in the Nationals. (School : Yuvabharathi)
