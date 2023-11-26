@@ -1,0 +1,102 @@
+#include <Servo.h>
+
+Servo servo_48; // Door
+Servo servo_49; // Seat
+Servo servo_50; // Flush
+
+int count = 0; 
+long duration;
+int distance;
+
+void setup()
+{
+  servo_48.attach(48, 500, 2500);
+  servo_49.attach(49, 500, 2500);
+  servo_50.attach(50, 500, 2500);
+  pinMode(32, INPUT_PULLUP); // Button on the outside
+  pinMode(33, INPUT_PULLUP); // Button on the inside
+
+  pinMode(46, OUTPUT); // Trigger pin
+  pinMode(47, INPUT); // Echo pin
+  Serial.begin(9600);
+
+  pinMode(25, OUTPUT); // Pump spraying dilute isopropyl alcohol to the floor and the rim
+  pinMode(28, OUTPUT); // Pump to transport water to fiter column
+
+  pinMode(38, OUTPUT); // Red light showing occupied
+  pinMode(39, OUTPUT); // Yellow light alerting cleaning status
+  pinMode(40, OUTPUT); // Green light showing vacant
+ 
+  pinMode(41, OUTPUT); // Inside light alerting cleaning status
+ 
+  digitalWrite(38, LOW);
+  digitalWrite(39, LOW);
+  digitalWrite(40, HIGH); // Initial status is vacant
+  digitalWrite(41, LOW);
+ 
+  servo_48.write(0); 
+  servo_49.write(0);
+  servo_50.write(0);
+}
+
+int readUltrasonicDistance4Pin()
+{
+  digitalWrite(46, LOW);
+  digitalWrite(46, HIGH);
+  digitalWrite(46, LOW);
+
+  return pulseIn(47, HIGH) * 0.0172;
+}
+
+void process_two(){
+  servo_48.write(90);
+  servo_49.write(90);
+  int test = readUltrasonicDistance4Pin();
+  Serial.print(test);
+  if (test > 10) { // Range 10 cm just for the demo model
+    delay(5000);
+    digitalWrite(38, LOW);
+    digitalWrite(39, HIGH);
+    digitalWrite(40, LOW);
+    digitalWrite(41, HIGH);
+   
+    servo_48.write(0);
+    delay(2000);
+    servo_50.write(90);
+    digitalWrite(25, HIGH);
+    delay(3000);
+    servo_50.write(0);
+    delay(7000);
+    servo_49.write(0);
+    digitalWrite(25, LOW);
+    count = count + 1;
+   
+    digitalWrite(39, LOW);
+    digitalWrite(40, HIGH);
+    digitalWrite(41, LOW);
+  }else{
+    process_two();
+  }
+}
+
+void loop()
+{
+  if(count >= 3){ // Every three time the cycle runs, the collected grey water gets pumped to the filter column
+    digitalWrite(28, HIGH);
+    delay(5000);
+    digitalWrite(28, LOW);
+    count = 0;
+  }
+  if (digitalRead(32) == LOW) {
+    digitalWrite(38, HIGH);
+    digitalWrite(39, LOW);
+    digitalWrite(40, LOW);
+   
+    servo_48.write(90);
+    delay(5000);
+    servo_48.write(0);
+  }
+  if (digitalRead(33) == LOW) {
+    process_two();
+  }
+}
