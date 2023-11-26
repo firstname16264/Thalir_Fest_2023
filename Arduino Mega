@@ -3,7 +3,7 @@
 Servo servo_48; // Door
 Servo servo_49; // Seat
 Servo servo_50; // Flush
- 
+
 int count = 0; 
 long duration;
 int distance;
