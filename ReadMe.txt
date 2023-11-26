@@ -2,7 +2,7 @@ Hello Guys. I am FirstName.
 I was a student member of the Thalir Innovation Fest 2023 competion. Specifically the design thinking division.
 I was responsible for the circuit, and code of the hardware and the Full Stack Development of the Software.
 Our project was nominated for the finals and later went on to win First Place in the Nationals. (School : Yuvabharathi)
-
+ 
 Brief Explanation of the Model : 
   Problem Statement (Paraphrased) : An inovative solution to make public toilets more hygenic and safe to use.
   Our solution : An automated toilet kit that can be fitted in public toilets that cleans the toilet without human intervention
