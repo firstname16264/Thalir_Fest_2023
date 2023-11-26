@@ -16,6 +16,13 @@ Brief Explanation of the Model :
                       This is also useful for individual users travelling in remote areas where hotels and toilet fecilities are not common.
                       Other features include a Fast-Tag like credit system with auto subtraction of credits, and a Past booking page with taggable location for rebooking.
 
+Web App Demo :
+  To test out the website yourself, go to http://iunderstandit.in/index.php. Its safe, I promise. Your brower might say that its unsafe
+because I don't have an SSL Cirtificate for the website, which can cost a monthly fee. Before using the app, you need to go to
+chrome://flags/#unsafely-treat-insecure-origin-as-secure if you are using chrome and paste 'http://www.iunderstandit.in,http://iunderstandit.in'
+into the input field and toggle the Disable button to Enable and relode chrome. Otherwise the website won't be allowed to ask for
+your loacation permition which, as you can imagine is crutial to a website whose main feature is a Dynamic Map.
+
 I was responsible for the circuit building, the Arduino Mega code for handling the circuit, the raspberry pi code with live access to the database , on the hardware side,
 and the Full Stack (Front end, Middle Tyer, Backend) Creation for the website.
 
