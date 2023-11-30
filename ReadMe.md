@@ -63,6 +63,6 @@ I was responsible for:
 
 ## Contact Information 📧
 
-Feel free to reach out: [firstname16264@gmail.com](mailto:firstname16264@gmail.com?cc=vkarthikgovindan@gmail.com&subject=Queries%20Reg%20Project%20Swachh%20Sauchalay&body=Hello%2C%20I%20am%20%5BSender's%20Name%5D.%20I%20reached%20out%20to%20you%20because%20I%20wanted%20to%20%5BRest%20of%20your%20content%5D) or [vkarthikgovindan@gmail.com](mailto:vkarthikgovindan@gmail.com?cc=firstname16264@gmail.com&subject=Queries%20Reg%20Project%20Swachh%20Sauchalay&body=Hello%2C%20I%20am%20%5BSender's%20Name%5D.%20I%20reached%20out%20to%20you%20because%20I%20wanted%20to%20%5BRest%20of%20your%20content%5D)
+Feel free to reach out: [firstname16264@gmail.com](mailto:firstname16264@gmail.com?cc=vkarthikgovindan@gmail.com&subject=Queries%20Reg%20Project%20Swachh%20Sauchalay) or [vkarthikgovindan@gmail.com](mailto:vkarthikgovindan@gmail.com?cc=firstname16264@gmail.com&subject=Queries%20Reg%20Project%20Swachh%20Sauchalay)
 
 ---
