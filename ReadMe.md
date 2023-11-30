@@ -63,6 +63,6 @@ I was responsible for:
 
 ## Contact Information 📧
 
-Feel free to reach out: firstname16264@gmail.com
+Feel free to reach out: firstname16264@gmail.com or vkarthikgovindan@gmail.com
 
 ---
