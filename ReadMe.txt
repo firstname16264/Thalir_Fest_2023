@@ -1,32 +1,68 @@
-Hello Guys. I am Karthik Govindan.
-I was a student member of the Thalir Innovation Fest 2023 competion. Specifically the design thinking division.
-I was responsible for the circuit, and code of the hardware and the Full Stack Development of the Software.
-Our project was nominated for the finals and later went on to win First Place in the Nationals. (School : Yuvabharathi)
- 
-Brief Explanation of the Model : 
-  Problem Statement (Paraphrased) : An inovative solution to make public toilets more hygenic and safe to use.
-  Our solution : An automated toilet kit that can be fitted in public toilets that cleans the toilet without human intervention
+# Swachh Sauchalay - Project Analysis
 
-  Aspects of the Project : 
-    1. The Hardware : Consists of an arduino circuit with servos pumps and leds. Handles automatic door locking unlocking and closing,
-      toilet seat rearrangement, flushing, floor cleaning, and periodic recyling of used grey water.
+**Hello, GitHub community! I'm Karthik Govindan, one of the proud winners of Thalir Innovation Fest 2023. I am from the Design Thinking team. Let me walk you through our solution to enhance public toilet hygiene and safety.**
 
-    2. The Software : A website with a Leaflet map with dynamic markers of nearby toilets with their live status (Vacant -> Green, Occupied -> Red), done with raspberry pi connected to the toilets.
-                      The website further allows bulk booking usefull for travell buses to book hygenic toilets for their travellers.
-                      This is also useful for individual users travelling in remote areas where hotels and toilet fecilities are not common.
-                      Other features include a Fast-Tag like credit system with auto subtraction of credits, and a Past booking page with taggable location for rebooking.
+---
 
-Web App Demo :
-  To test out the website yourself, go to http://iunderstandit.in/index.php. Its safe, I promise. Your brower might say that its unsafe
-because I don't have an SSL Cirtificate for the website, which can cost a monthly fee. Before using the app, you need to go to
-chrome://flags/#unsafely-treat-insecure-origin-as-secure if you are using chrome and paste 'http://www.iunderstandit.in,http://iunderstandit.in'
-into the input field and toggle the Disable button to Enable and relode chrome. Otherwise the website won't be allowed to ask for
-your loacation permition which, as you can imagine is crutial to a website whose main feature is a Dynamic Map.
+## Project Overview 🚽
 
-I was responsible for the circuit building, the Arduino Mega code for handling the circuit, the raspberry pi code with live access to the database , on the hardware side,
-and the Full Stack (Front end, Middle Tyer, Backend) Creation for the website.
+**Problem Statement (Paraphrased):** Develop a groundbreaking solution to make public toilets more hygienic and safe.
 
-One intresting side product of this is that, the website code can almost be fully reused for other very usefull projects like Car Parking Booking Systems.
+**Our Solution:** An automated toilet kit designed for public toilets, eliminating the need for human intervention in the cleaning process.
 
-I will be posting my contribution to the project in this repositry for educational purposes. Enjoy and Stay Sharp.
-Contact info : firstname16264@gmail.com
+### Aspects of the Project 🛠️
+
+1. **Hardware Component:**
+   - Arduino circuit featuring servos, pumps, and LEDs.
+   - Automated functionalities: door locking/unlocking, toilet seat rearrangement, flushing, floor cleaning, and recycling of used gray water.
+
+2. **Software Component:**
+   - Web application with a dynamic Leaflet map showcasing nearby toilets and their live status (Vacant -> Green, Occupied -> Red) via Raspberry Pi.
+   - Bulk booking system for individual users and travel buses, ensuring access to hygienic toilets in remote areas.
+
+---
+
+## Web App Features 🌐
+
+1. **Real-Time Updates:**
+   - Live status of nearby toilets on a to-scale map with dynamic markers (Vacant -> Green, Occupied -> Red).
+
+2. **Pre-Booking Systems:**
+   - Individual or bulk bookings with flexible timing options and easy cancellation.
+
+3. **Fast Tag Credit System:**
+   - Purchase credits in bulk to streamline restroom usage payments.
+
+4. **Past Bookings Page:**
+   - Track usage history, including credits spent, remaining balance, location, and time of bookings.
+
+5. **Location Tagging System:**
+   - Tag locations with custom text for easy search and reference in the Past Bookings page.
+
+6. **QR System:**
+   - Authenticate bookers at the physical location for added security.
+
+---
+
+## Experience the Web App 🖥️
+
+Visit [iunderstandit.in/index.php](http://iunderstandit.in/index.php) to test the website yourself.
+
+---
+
+## My Contributions 🛠️
+
+I was responsible for:
+- Circuit building and Arduino Mega code for hardware functionalities.
+- Raspberry Pi code for live database access.
+- Full Stack development of the website (Front end, Middle Tier, Backend).
+
+**Excitingly, the website code is versatile and can be repurposed for projects like Car Parking Booking Systems. Check out my contributions in the repository for educational purposes. Enjoy exploring, and stay sharp!**
+
+---
+
+## Contact Information 📧
+
+Feel free to reach out: firstname16264@gmail.com
+
+---
